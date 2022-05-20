@@ -5,16 +5,19 @@ replicaCount: 1
 
 image:
   repository: smartcontract/chainlink
+  tag: 0.9.10
+#  tag: 1.4.1-root
   pullPolicy: IfNotPresent
+#  command: ["tail", "-f", "/dev/null"]
   command: ["chainlink", "local", "node"]
   args: ["-a", "/etc/chainlink/api", "-p", "/etc/chainlink/password"]
 config:
   # Login Info
   ROOT: /chainlink
   API_LOGIN: |
-    API_EMAIL
-    API_LOGIN
-  WALLET_PASSWORD: ""
+    test@test.com
+    TTTtesttesttests
+  WALLET_PASSWORD: "TTTtesttesttests"
   # HTTP Security
   ALLOW_ORIGINS: "*"
   SECURE_COOKIES: "false"
@@ -24,9 +27,9 @@ config:
   DATABASE_TIMEOUT: "0"
   DATABASE_URL: postgresql://postgres@postgresql:5432/chainlink?sslmode=disable
   # Ethereum
-  ETH_URL: ws://geth:8546
-  ETH_CHAIN_ID: "1"
-  LINK_CONTRACT_ADDRESS: 0x514910771af9ca656af840dff83e8264ecf986ca
+  ETH_URL: wss://ropsten.infura.io/ws/v3/a812451fbb3c476faaa7b4186cafdf63
+  ETH_CHAIN_ID: "3"
+  LINK_CONTRACT_ADDRESS: 0x20fE562d797A42Dcb3399062AE9546cd06f63280
   ### Logging ###
   # JSON_CONSOLE: "true"
   # LOG_LEVEL: warn
@@ -56,7 +59,7 @@ config:
   ### OCR Variables ###
   # OCR_TRACE_LOGGING: "true"
   # FEATURE_OFFCHAIN_REPORTING: "true"
-  # P2P_LISTEN_PORT: "30668"
+  P2P_LISTEN_PORT: "30668"
   # P2P_ANNOUNCE_PORT: "30668"
   # P2P_ANNOUNCE_IP: "YOUR_NODE_IP"
   ### OCR Default job config ###
