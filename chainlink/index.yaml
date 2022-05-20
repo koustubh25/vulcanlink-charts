@@ -3,7 +3,7 @@ entries:
   chainlink:
   - apiVersion: v2
     appVersion: 0.10.9
-    created: "2022-05-21T06:26:42.72966+10:00"
+    created: "2022-05-21T06:38:13.368356+10:00"
     description: A Helm chart for Chainlink
     digest: 7de19f027dfcfac1450fa61fc9ddfbd22f6f993c5cafee0be37bd809dfba4efd
     home: https://chain.link
@@ -20,6 +20,6 @@ entries:
     - https://github.com/smartcontractkit/chainlink
     type: application
     urls:
-    - https://koustubh25.github.io/charts/chainlink-0.2.10.tgz
+    - https://koustubh25.github.io/vulcanlink-charts/chainlink-0.2.10.tgz
     version: 0.2.10
-generated: "2022-05-21T06:26:42.726886+10:00"
+generated: "2022-05-21T06:38:13.366443+10:00"
