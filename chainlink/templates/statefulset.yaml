@@ -48,10 +48,12 @@ spec:
             httpGet:
               path: /
               port: http
+            initialDelaySeconds: 30
           readinessProbe:
             httpGet:
               path: /
               port: http
+            initialDelaySeconds: 30
           env:
             - name: POD_NAME
               valueFrom:

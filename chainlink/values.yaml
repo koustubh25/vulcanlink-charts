@@ -3,6 +3,9 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 
+postgres:
+  user: postgres
+  db: chainlink
 image:
   repository: smartcontract/chainlink
   tag: 0.9.10

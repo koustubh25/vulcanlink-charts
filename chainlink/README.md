@@ -21,7 +21,7 @@ This Chart is a fork of https://github.com/vulcanlink/charts with the following 
 
 1. 
 ```shell
-$ helm repo add koustubh https://koustubh25.github.io/charts/
+$ helm repo add koustubh https://koustubh25.github.io/vulcanlink-charts
 $ helm install my-release koustubh/chainlink
 ```
 
